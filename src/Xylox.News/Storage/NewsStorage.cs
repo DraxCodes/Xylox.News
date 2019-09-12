@@ -10,7 +10,10 @@ namespace Xylox.News.Storage
 
         public NewsStorage()
         {
-            _news = new List<XyloxNews> { new XyloxNews("Base News Item") };
+            _news = new List<XyloxNews> { new XyloxNews {
+                Title = "Base Title",
+                Description = "Base Description"
+             }};
         }
 
         public void Add(XyloxNews item)
@@ -18,7 +21,7 @@ namespace Xylox.News.Storage
             _news.Add(item);
         }
 
-        public IEnumerable<XyloxNews> Get()
+        public IEnumerable<IDataStoreItem> Get()
         {
             return _news;
         }

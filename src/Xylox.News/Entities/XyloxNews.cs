@@ -1,12 +1,11 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
 
 namespace Xylox.News.Entities
 {
-    public class XyloxNews
+    public class XyloxNews : IDataStoreItem
     {
+        public Guid Id { get; } = Guid.NewGuid();
+
         public string Title { get; set; }
         public string Description { get; set; }
 

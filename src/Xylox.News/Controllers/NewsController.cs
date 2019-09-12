@@ -25,7 +25,7 @@ namespace Xylox.News.Controllers
         public IActionResult Add([FromBody]XyloxNews item)
         {
             _dataStore.Add(item);
-            return Ok($"Item: {item}, has been added.");
+            return Ok($"Item: {item.Id}, has been added.");
         }
     }
 }

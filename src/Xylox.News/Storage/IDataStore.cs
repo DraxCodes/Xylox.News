@@ -5,7 +5,7 @@ namespace Xylox.News.Storage
 {
     public interface IDataStore
     {
-        IEnumerable<XyloxNews> Get();
+        IEnumerable<IDataStoreItem> Get();
         void Add(XyloxNews item);
     }
 }
