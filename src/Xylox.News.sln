@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.28922.388
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Xylox.News", "Xylox.News\Xylox.News.csproj", "{69B538C7-400B-4394-8F11-D9BE02C67CEA}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{69B538C7-400B-4394-8F11-D9BE02C67CEA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{69B538C7-400B-4394-8F11-D9BE02C67CEA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{69B538C7-400B-4394-8F11-D9BE02C67CEA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{69B538C7-400B-4394-8F11-D9BE02C67CEA}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BACAE308-4403-4FD3-BE99-15A32353D45E}
+	EndGlobalSection
+EndGlobal
