@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using System.Collections.Generic;
 using Xylox.News.Entities;
 using Xylox.News.Storage;
 
@@ -18,7 +19,9 @@ namespace Xylox.News.Controllers
         public IActionResult List()
         {
             var result = _dataStore.Get();
-            return new JsonResult(result);
+            var test = result.CastTo<XyloxNews>();
+
+            return new JsonResult(test);
         }
 
         [HttpPost("add")]
