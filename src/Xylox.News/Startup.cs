@@ -24,6 +24,10 @@ namespace Xylox.News
 
             services.AddSingleton<IDataStore, NewsStorage>();
 
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new Info { Title = "My API", Version = "v1" });
+            });
         }
 
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
@@ -45,6 +49,12 @@ namespace Xylox.News
             //app.UseHttpsRedirection();
             app.UseMvc();
 
+            app.UseSwagger();
+
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My API V1");
+            });
         }
     }
 }
